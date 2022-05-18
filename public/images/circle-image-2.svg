@@ -1,0 +1,18 @@
+<svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M252.899 209.018C301.643 209.018 341.158 195.677 341.158 179.22C341.158 162.763 301.643 149.422 252.899 149.422C204.155 149.422 164.641 162.763 164.641 179.22C164.641 195.677 204.155 209.018 252.899 209.018Z" stroke="white" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M341.158 269.748C341.158 286.393 301.932 299.83 252.899 299.83C203.867 299.83 164.641 286.393 164.641 269.748" stroke="white" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M341.158 224.343C341.158 240.988 301.932 254.424 252.899 254.424C203.867 254.424 164.641 240.988 164.641 224.343" stroke="white" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M164.641 179.503V318.793C164.641 335.309 204.4 350.344 253.445 350.344C302.49 350.344 341.725 337.012 341.725 320.496L341.201 179.503" stroke="white" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="386.615" y1="110.293" x2="338.32" y2="169.321" stroke="white" stroke-width="12"/>
+<line x1="94.2812" y1="162.578" x2="166.725" y2="189.409" stroke="white" stroke-width="12"/>
+<line x1="229.643" y1="63.0034" x2="237.692" y2="148.863" stroke="white" stroke-width="12"/>
+<line x1="407.627" y1="302.876" x2="340.55" y2="289.46" stroke="white" stroke-width="12"/>
+<line x1="88.8691" y1="369.81" x2="161.313" y2="321.515" stroke="white" stroke-width="12"/>
+<line x1="276.744" y1="437.258" x2="266.011" y2="351.399" stroke="white" stroke-width="12"/>
+<circle cx="76.28" cy="154.28" r="16.3842" stroke="white" stroke-width="11.7915"/>
+<circle cx="74.28" cy="380.28" r="16.3842" stroke="white" stroke-width="11.7915"/>
+<circle cx="277.28" cy="453.28" r="16.28" stroke="white" stroke-width="12"/>
+<circle cx="425.717" cy="305.858" r="16.28" stroke="white" stroke-width="12"/>
+<circle cx="396.28" cy="93.28" r="16.28" stroke="white" stroke-width="12"/>
+<circle cx="227.282" cy="44.2817" r="16.2817" stroke="white" stroke-width="12"/>
+</svg>
