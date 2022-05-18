@@ -38,6 +38,63 @@ const flexRow = css`
   margin-bottom: 4em;
 `;
 
+const featuresStyles = css`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10em 0;
+  .features-title {
+    text-align: center;
+    margin-bottom: 8vh;
+    h2 {
+      font-weight: 500;
+      line-height: 110%;
+      font-size: 40px;
+      letter-spacing: -0.02em;
+      margin-bottom: 24px;
+    }
+
+    .text-grey {
+      font-size: 22px;
+      line-height: 120%;
+      opacity: 0.7;
+    }
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 25px;
+
+    .panel {
+      padding: 36px;
+      border-radius: 12px;
+      background-color: hsla(0, 0%, 100%, 0.05);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .panel-info {
+        .panel-sub-text {
+          opacity: 0.7;
+        }
+
+        h5 {
+          display: inline;
+        }
+
+        h5,
+        .panel-sub-text {
+          font-size: 18px;
+          line-height: 28px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+`;
 const solutionsDescriptionStyles = css`
   width: 85%;
   h3 {
@@ -371,6 +428,88 @@ export default function Main() {
             </div>
           </div>
         </article>
+      </section>
+      <section className="features" css={featuresStyles}>
+        <div className="features-title">
+          <h2>Platform Features</h2>
+          <h3 className="text-grey">
+            Feature highlights on the Dropbase Platform
+          </h3>
+        </div>
+        <div className="features-grid">
+          <div className="panel">
+            <div className="panel-info">
+              <h5>Data request. </h5>
+              <span className="panel-sub-text">
+                Request data from internal and external partners.
+              </span>
+            </div>
+          </div>
+          <div className="panel">
+            <div className="panel-info">
+              <h5>Team Workspaces. </h5>
+              <span className="panel-sub-text">
+                Collaborate on data with your team.
+              </span>
+            </div>
+          </div>
+          <div className="panel">
+            <div className="panel-info">
+              <h5>Spreadsheet UI. </h5>
+              <span className="panel-sub-text">
+                See how your data looks as you process it.
+              </span>
+            </div>
+          </div>
+          <div className="panel">
+            <div className="panel-info">
+              <h5>No-code functions. </h5>
+              <span className="panel-sub-text">
+                Drag-and-drop pre-built cleaning steps.
+              </span>
+            </div>
+          </div>
+          <div className="panel">
+            <div className="panel-info">
+              <h5>Custom functions. </h5>
+              <span className="panel-sub-text">
+                Add custom transformation steps in SQL.
+              </span>
+            </div>
+          </div>
+          <div className="panel">
+            <div className="panel-info">
+              <h5>Integrations. </h5>
+              <span className="panel-sub-text">
+                Connect database to your favorite BI tool or data app.
+              </span>
+            </div>
+          </div>
+          <div className="panel">
+            <div className="panel-info">
+              <h5>1 click exports. </h5>
+              <span className="panel-sub-text">
+                Move your data into a cloud data warehouse.
+              </span>
+            </div>
+          </div>
+          <div className="panel">
+            <div className="panel-info">
+              <h5>Database access. </h5>
+              <span className="panel-sub-text">
+                Get full access to database credentials.
+              </span>
+            </div>
+          </div>
+          <div className="panel">
+            <div className="panel-info">
+              <h5>File compatibility. </h5>
+              <span className="panel-sub-text">
+                Import from CSVs or excel files.
+              </span>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   );
