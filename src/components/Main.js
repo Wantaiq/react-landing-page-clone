@@ -43,7 +43,8 @@ const featuresStyles = css`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10em 0;
+  margin-top: 10em;
+  margin-bottom: 7em;
   .features-title {
     text-align: center;
     margin-bottom: 8vh;
@@ -69,9 +70,9 @@ const featuresStyles = css`
     gap: 25px;
 
     .panel {
-      padding: 36px;
+      padding: 34px;
       border-radius: 12px;
-      background-color: hsla(0, 0%, 100%, 0.05);
+      background-color: #ffffff0d;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -79,10 +80,6 @@ const featuresStyles = css`
       .panel-info {
         .panel-sub-text {
           opacity: 0.7;
-        }
-
-        h5 {
-          display: inline;
         }
 
         h5,
@@ -198,6 +195,28 @@ const howItWorksSectionStyles = css`
 
   .instructions > .order-one {
     order: -1;
+  }
+`;
+
+const ctaSectionStyles = css`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    margin-bottom: 24px;
+    font-size: 35px;
+    line-height: 110%;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+  }
+
+  h3 {
+    font-size: 19px;
+    line-height: 120%;
+    opacity: 0.7;
+    margin-bottom: 36px;
   }
 `;
 
@@ -439,76 +458,109 @@ export default function Main() {
         <div className="features-grid">
           <div className="panel">
             <div className="panel-info">
-              <h5>Data request. </h5>
-              <span className="panel-sub-text">
-                Request data from internal and external partners.
-              </span>
+              <h5>
+                Data request.
+                <span className="panel-sub-text">
+                  Request data from internal and external partners.
+                </span>
+              </h5>
             </div>
           </div>
           <div className="panel">
             <div className="panel-info">
-              <h5>Team Workspaces. </h5>
-              <span className="panel-sub-text">
-                Collaborate on data with your team.
-              </span>
+              <h5>
+                Team Workspaces.
+                <span className="panel-sub-text">
+                  Collaborate on data with your team.
+                </span>
+              </h5>
             </div>
           </div>
           <div className="panel">
             <div className="panel-info">
-              <h5>Spreadsheet UI. </h5>
-              <span className="panel-sub-text">
-                See how your data looks as you process it.
-              </span>
+              <h5>
+                Spreadsheet UI.
+                <span className="panel-sub-text">
+                  See how your data looks as you process it.
+                </span>
+              </h5>
             </div>
           </div>
           <div className="panel">
             <div className="panel-info">
-              <h5>No-code functions. </h5>
-              <span className="panel-sub-text">
-                Drag-and-drop pre-built cleaning steps.
-              </span>
+              <h5>
+                No-code functions.
+                <span className="panel-sub-text">
+                  Drag-and-drop pre-built cleaning steps.
+                </span>
+              </h5>
             </div>
           </div>
           <div className="panel">
             <div className="panel-info">
-              <h5>Custom functions. </h5>
-              <span className="panel-sub-text">
-                Add custom transformation steps in SQL.
-              </span>
+              <h5>
+                Custom functions.
+                <span className="panel-sub-text">
+                  Add custom transformation steps in SQL.
+                </span>{' '}
+              </h5>
             </div>
           </div>
           <div className="panel">
             <div className="panel-info">
-              <h5>Integrations. </h5>
-              <span className="panel-sub-text">
-                Connect database to your favorite BI tool or data app.
-              </span>
+              <h5>
+                Integrations.
+                <span className="panel-sub-text">
+                  Connect database to your favorite BI tool or data app.
+                </span>
+              </h5>
             </div>
           </div>
           <div className="panel">
             <div className="panel-info">
-              <h5>1 click exports. </h5>
-              <span className="panel-sub-text">
-                Move your data into a cloud data warehouse.
-              </span>
+              <h5>
+                1 click exports.
+                <span className="panel-sub-text">
+                  Move your data into a cloud data warehouse.
+                </span>
+              </h5>
             </div>
           </div>
           <div className="panel">
             <div className="panel-info">
-              <h5>Database access. </h5>
-              <span className="panel-sub-text">
-                Get full access to database credentials.
-              </span>
+              <h5>
+                Database access.
+                <span className="panel-sub-text">
+                  Get full access to database credentials.
+                </span>
+              </h5>
             </div>
           </div>
           <div className="panel">
             <div className="panel-info">
-              <h5>File compatibility. </h5>
-              <span className="panel-sub-text">
-                Import from CSVs or excel files.
-              </span>
+              <h5>
+                File compatibility.
+                <span className="panel-sub-text">
+                  Import from CSVs or excel files.
+                </span>
+              </h5>
             </div>
           </div>
+        </div>
+      </section>
+      <section className="cta-section" css={ctaSectionStyles}>
+        <h2>Start Dropbase Trial</h2>
+        <h3>
+          Automatically collect, clean, and centralize your data with Dropbase
+          today
+        </h3>
+        <div className="ctaButtons" css={buttonStyles}>
+          <a href="/" css={tryForFreeBtn}>
+            Try Dropbase for Free
+          </a>
+          <a href="/" css={bookDemoStyles}>
+            Request Demo
+          </a>
         </div>
       </section>
     </main>
