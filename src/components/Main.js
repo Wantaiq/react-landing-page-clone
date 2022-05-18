@@ -235,6 +235,8 @@ const blogSectionStyles = css`
     width: 100%;
     padding: 30px;
     border-radius: 12px;
+    display: flex;
+    flex-direction: column;
 
     .product-circle {
       background-color: #0971f1;
@@ -243,6 +245,7 @@ const blogSectionStyles = css`
       margin-bottom: 24px;
       font-weight: 600;
       padding: 0.2em 0.9em;
+      width: min-content;
     }
 
     .card-heading {
