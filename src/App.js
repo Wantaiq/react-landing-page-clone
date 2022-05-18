@@ -85,6 +85,7 @@ people that prefer not to see them */
 
 const wrapperStyles = css`
   width: 70%;
+  padding-bottom: 95px;
   margin: 0 auto;
 `;
 

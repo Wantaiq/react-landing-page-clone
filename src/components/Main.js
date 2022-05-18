@@ -220,6 +220,167 @@ const ctaSectionStyles = css`
   }
 `;
 
+const blogSectionStyles = css`
+  margin-top: 8vh;
+
+  .blog-title {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .featured-post {
+    background-color: #ffffff0d;
+    margin: 8vh 0;
+    width: 100%;
+    padding: 30px;
+    border-radius: 12px;
+
+    .product-circle {
+      background-color: #0971f1;
+      font-size: 13px;
+      border-radius: 16px;
+      margin-bottom: 24px;
+      font-weight: 600;
+      padding: 0.2em 0.9em;
+    }
+
+    .card-heading {
+      font-size: 28px;
+      line-height: 40px;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 24px;
+    }
+
+    .blog-panel-footer {
+      font-size: 14px;
+      line-height: 22px;
+      font-weight: 600;
+      opacity: 0.7;
+    }
+  }
+
+  h2 {
+    margin-bottom: 24px;
+    font-size: 35px;
+    line-height: 110%;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+  }
+
+  h3 {
+    font-size: 20px;
+    line-height: 120%;
+    opacity: 0.7;
+  }
+`;
+
+const footerStyles = css`
+  background-color: #1b1b1b;
+  border-radius: 12px;
+  padding: 70px 72px 45px;
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 96px;
+    height: 90%;
+  }
+
+  .footer-flex {
+    display: flex;
+
+    width: 100%;
+    gap: 80px;
+
+    .contacts {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      a {
+        margin-bottom: 46px;
+      }
+      p {
+        font-size: 16px;
+        opacity: 0.5;
+        line-height: 24px;
+        font-weight: 500;
+      }
+    }
+
+    .product {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 1.5em;
+      h3 {
+        font-size: 20px;
+        line-height: 30px;
+        opacity: 0.8;
+      }
+
+      a {
+        opacity: 0.5;
+      }
+    }
+
+    .resources {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 1.6em;
+      h3 {
+        font-size: 20px;
+        line-height: 30px;
+        opacity: 0.8;
+      }
+
+      a {
+        opacity: 0.5;
+      }
+    }
+
+    .company {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 0.6em;
+      h3 {
+        font-size: 20px;
+        line-height: 30px;
+        opacity: 0.8;
+      }
+
+      a {
+        opacity: 0.5;
+      }
+    }
+  }
+  .footer-bottom-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: hsla(0, 0%, 100%, 0.5);
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 500;
+
+    .socials {
+      a {
+        margin: 0 1.5em;
+      }
+    }
+  }
+`;
+
 const bookDemoStyles = css`
   font-size: 1rem;
   border: 2px solid #ffffff1a;
@@ -243,326 +404,404 @@ const tryForFreeBtn = css`
 `;
 export default function Main() {
   return (
-    <main>
-      <section className="how-it-works">
-        <article css={howItWorksSectionStyles}>
-          <h2 css={sectionTitleStyles}>How it Works</h2>
-          <div className="instructions">
-            <div className="description">
-              <div css={numberStyles} className="circle">
-                <h3>1</h3>
+    <>
+      <main>
+        <section className="how-it-works">
+          <article css={howItWorksSectionStyles}>
+            <h2 css={sectionTitleStyles}>How it Works</h2>
+            <div className="instructions">
+              <div className="description">
+                <div css={numberStyles} className="circle">
+                  <h3>1</h3>
+                </div>
+                <h2>Import and Request data seamlessly</h2>
+                <h3>
+                  Import and Request data from customers and partners faster
+                  than ever. Automatically ingest data from CSVs and Excel
+                  files, clean, and load them directly to your database - no
+                  manual work needed. Never clean the same data twice.
+                </h3>
+                <a href="/">
+                  Learn how <img src="./images/side-arrow.svg" alt="" />
+                </a>
               </div>
-              <h2>Import and Request data seamlessly</h2>
-              <h3>
-                Import and Request data from customers and partners faster than
-                ever. Automatically ingest data from CSVs and Excel files,
-                clean, and load them directly to your database - no manual work
-                needed. Never clean the same data twice.
-              </h3>
-              <a href="/">
-                Learn how <img src="./images/side-arrow.svg" alt="" />
-              </a>
+              <div className="preview">
+                <img src="./images/preview-image1.svg" alt="" />
+              </div>
             </div>
-            <div className="preview">
-              <img src="./images/preview-image1.svg" alt="" />
-            </div>
-          </div>
-        </article>
+          </article>
 
-        <article css={howItWorksSectionStyles}>
-          <div className="instructions">
-            <div className="description">
-              <div css={numberStyles} className="circle">
-                <h3>2</h3>
+          <article css={howItWorksSectionStyles}>
+            <div className="instructions">
+              <div className="description">
+                <div css={numberStyles} className="circle">
+                  <h3>2</h3>
+                </div>
+                <h2>
+                  Clean and validate messy data just the way your systems need
+                  it
+                </h2>
+                <h3>
+                  With Dropbase, you can clean and validate your data with just
+                  a few clicks - no engineering required. Use pre-built cleaning
+                  and validations, or create custom ones to suit your system
+                  requirements.
+                </h3>
+                <a href="/">
+                  Learn how <img src="./images/side-arrow.svg" alt="" />
+                </a>
               </div>
-              <h2>
-                Clean and validate messy data just the way your systems need it
-              </h2>
-              <h3>
-                With Dropbase, you can clean and validate your data with just a
-                few clicks - no engineering required. Use pre-built cleaning and
-                validations, or create custom ones to suit your system
-                requirements.
-              </h3>
-              <a href="/">
-                Learn how <img src="./images/side-arrow.svg" alt="" />
-              </a>
+              <div className="preview order-one">
+                <img src="./images/preview-image2.svg" alt="" />
+              </div>
             </div>
-            <div className="preview order-one">
-              <img src="./images/preview-image2.svg" alt="" />
-            </div>
-          </div>
-        </article>
+          </article>
 
-        <article css={howItWorksSectionStyles}>
-          <div className="instructions">
-            <div className="description">
-              <div css={numberStyles} className="circle">
-                <h3>3</h3>
+          <article css={howItWorksSectionStyles}>
+            <div className="instructions">
+              <div className="description">
+                <div css={numberStyles} className="circle">
+                  <h3>3</h3>
+                </div>
+                <h2>
+                  Manage imported data in a secure, scalable, and
+                  analytics-ready database
+                </h2>
+                <h3>
+                  Databases are powerful but complicated to set up, manage, and
+                  scale without help from engineering or IT. With Dropbase,
+                  setting up a database is as easy as creating an account.
+                  Manage, grow, and secure all your data in your database with
+                  the simplest interface in the market.
+                </h3>
+                <a href="/">
+                  Learn how <img src="./images/side-arrow.svg" alt="" />
+                </a>
               </div>
-              <h2>
-                Manage imported data in a secure, scalable, and analytics-ready
-                database
-              </h2>
-              <h3>
-                Databases are powerful but complicated to set up, manage, and
-                scale without help from engineering or IT. With Dropbase,
-                setting up a database is as easy as creating an account. Manage,
-                grow, and secure all your data in your database with the
-                simplest interface in the market.
-              </h3>
-              <a href="/">
-                Learn how <img src="./images/side-arrow.svg" alt="" />
-              </a>
+              <div className="preview">
+                <img src="./images/preview-image3.svg" alt="" />
+              </div>
             </div>
-            <div className="preview">
-              <img src="./images/preview-image3.svg" alt="" />
-            </div>
-          </div>
-        </article>
+          </article>
 
-        <article css={howItWorksSectionStyles}>
-          <div className="instructions">
-            <div className="description">
-              <div css={numberStyles} className="circle">
-                <h3>4</h3>
+          <article css={howItWorksSectionStyles}>
+            <div className="instructions">
+              <div className="description">
+                <div css={numberStyles} className="circle">
+                  <h3>4</h3>
+                </div>
+                <h2>Connect and integrate with your favorite tools</h2>
+                <h3>
+                  Get the data you need and funnel it where it needs to go. We
+                  instantly grant database credentials to approved users so you
+                  can quickly and safely connect your database to your favorite
+                  BI tools, app builders, customer data pipelines and more.
+                </h3>
+                <a href="/">
+                  Learn how <img src="./images/side-arrow.svg" alt="" />
+                </a>
               </div>
-              <h2>Connect and integrate with your favorite tools</h2>
-              <h3>
-                Get the data you need and funnel it where it needs to go. We
-                instantly grant database credentials to approved users so you
-                can quickly and safely connect your database to your favorite BI
-                tools, app builders, customer data pipelines and more.
-              </h3>
-              <a href="/">
-                Learn how <img src="./images/side-arrow.svg" alt="" />
-              </a>
+              <div className="preview order-one">
+                <img src="./images/preview-image4.svg" alt="" />
+              </div>
             </div>
-            <div className="preview order-one">
-              <img src="./images/preview-image4.svg" alt="" />
-            </div>
-          </div>
-        </article>
+          </article>
 
-        <article css={howItWorksSectionStyles}>
-          <div className="instructions">
-            <div className="description">
-              <div css={numberStyles} className="circle">
-                <h3>5</h3>
+          <article css={howItWorksSectionStyles}>
+            <div className="instructions">
+              <div className="description">
+                <div css={numberStyles} className="circle">
+                  <h3>5</h3>
+                </div>
+                <h2>
+                  Query all of your data just the way you need it, in seconds
+                </h2>
+                <h3>
+                  With Dropbase, you can build sophisticated data queries, with
+                  just a few clicks - no engineering required. Chain multiple
+                  steps, save them as views, and query a million rows in
+                  seconds.
+                </h3>
+                <a href="/">
+                  Learn how <img src="./images/side-arrow.svg" alt="" />
+                </a>
               </div>
-              <h2>
-                Query all of your data just the way you need it, in seconds
-              </h2>
-              <h3>
-                With Dropbase, you can build sophisticated data queries, with
-                just a few clicks - no engineering required. Chain multiple
-                steps, save them as views, and query a million rows in seconds.
-              </h3>
-              <a href="/">
-                Learn how <img src="./images/side-arrow.svg" alt="" />
-              </a>
+              <div className="preview">
+                <img src="./images/preview-image5.svg" alt="" />
+              </div>
             </div>
-            <div className="preview">
-              <img src="./images/preview-image5.svg" alt="" />
-            </div>
+          </article>
+          <div css={buttonStyles} className="buttons">
+            <a href="/" css={tryForFreeBtn}>
+              Try Dropbase for Free
+            </a>
+            <a href="/" css={bookDemoStyles}>
+              Book Demo
+            </a>
           </div>
-        </article>
-        <div css={buttonStyles} className="buttons">
-          <a href="/" css={tryForFreeBtn}>
-            Try Dropbase for Free
-          </a>
-          <a href="/" css={bookDemoStyles}>
-            Book Demo
-          </a>
-        </div>
-      </section>
-      <section className="solutions">
-        <article css={solutionsSectionStyles}>
-          <div className="flex-col">
-            <div className="solutions-title">
-              <h2>Solutions</h2>
-              <h3>
-                Learn how Dropbase offers end-to-end solutions to pain points
-                experienced across industries.
-              </h3>
+        </section>
+        <section className="solutions">
+          <article css={solutionsSectionStyles}>
+            <div className="flex-col">
+              <div className="solutions-title">
+                <h2>Solutions</h2>
+                <h3>
+                  Learn how Dropbase offers end-to-end solutions to pain points
+                  experienced across industries.
+                </h3>
+              </div>
+              <div className="flex-row" css={flexRow}>
+                <div className="circle-img" css={circleImageStyles}>
+                  <img src="./images/circle-image-1.svg" width="48" alt="" />
+                </div>
+                <div
+                  className="solution-description"
+                  css={solutionsDescriptionStyles}
+                >
+                  <h3>Automated Data Operations</h3>
+                  <h3 className="grey-text">
+                    Focus on getting the data you need, not the manual work of
+                    collecting and cleaning it. Dropbase automates the process
+                    of collecting, cleaning, storing and transforming data in
+                    one platform.
+                  </h3>
+                  <a href="/">
+                    Learn how <img src="./images/side-arrow.svg" alt="" />
+                  </a>
+                </div>
+              </div>
             </div>
             <div className="flex-row" css={flexRow}>
               <div className="circle-img" css={circleImageStyles}>
-                <img src="./images/circle-image-1.svg" width="48" alt="" />
+                <img src="./images/circle-image-2.svg" width="48" alt="" />
               </div>
               <div
                 className="solution-description"
                 css={solutionsDescriptionStyles}
               >
-                <h3>Automated Data Operations</h3>
+                <h3>Democratized Data Access</h3>
                 <h3 className="grey-text">
-                  Focus on getting the data you need, not the manual work of
-                  collecting and cleaning it. Dropbase automates the process of
-                  collecting, cleaning, storing and transforming data in one
-                  platform.
+                  Get a workspace that allows your team to collaborate on data
+                  in one place. Invite internal and external users to join with
+                  different user access levels so everyone can work with data
+                  securely and efficiently.
                 </h3>
                 <a href="/">
                   Learn how <img src="./images/side-arrow.svg" alt="" />
                 </a>
               </div>
             </div>
+            <div className="flex-row" css={flexRow}>
+              <div className="circle-img" css={circleImageStyles}>
+                <img src="./images/circle-image-3.svg" width="48" alt="" />
+              </div>
+              <div
+                className="solution-description"
+                css={solutionsDescriptionStyles}
+              >
+                <h3>Turnkey Data Warehousing & Integration</h3>
+                <h3 className="grey-text">
+                  Get a modern, scalable data stack that grows with you.
+                  Dropbase gives you access to your own database and allows you
+                  to quickly integrate with your favorite tools.
+                </h3>
+                <a href="/">
+                  Learn how <img src="./images/side-arrow.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </article>
+        </section>
+        <section className="features" css={featuresStyles}>
+          <div className="features-title">
+            <h2>Platform Features</h2>
+            <h3 className="text-grey">
+              Feature highlights on the Dropbase Platform
+            </h3>
           </div>
-          <div className="flex-row" css={flexRow}>
-            <div className="circle-img" css={circleImageStyles}>
-              <img src="./images/circle-image-2.svg" width="48" alt="" />
+          <div className="features-grid">
+            <div className="panel">
+              <div className="panel-info">
+                <h5>
+                  Data request.
+                  <span className="panel-sub-text">
+                    Request data from internal and external partners.
+                  </span>
+                </h5>
+              </div>
             </div>
-            <div
-              className="solution-description"
-              css={solutionsDescriptionStyles}
-            >
-              <h3>Democratized Data Access</h3>
-              <h3 className="grey-text">
-                Get a workspace that allows your team to collaborate on data in
-                one place. Invite internal and external users to join with
-                different user access levels so everyone can work with data
-                securely and efficiently.
-              </h3>
-              <a href="/">
-                Learn how <img src="./images/side-arrow.svg" alt="" />
-              </a>
+            <div className="panel">
+              <div className="panel-info">
+                <h5>
+                  Team Workspaces.
+                  <span className="panel-sub-text">
+                    Collaborate on data with your team.
+                  </span>
+                </h5>
+              </div>
+            </div>
+            <div className="panel">
+              <div className="panel-info">
+                <h5>
+                  Spreadsheet UI.
+                  <span className="panel-sub-text">
+                    See how your data looks as you process it.
+                  </span>
+                </h5>
+              </div>
+            </div>
+            <div className="panel">
+              <div className="panel-info">
+                <h5>
+                  No-code functions.
+                  <span className="panel-sub-text">
+                    Drag-and-drop pre-built cleaning steps.
+                  </span>
+                </h5>
+              </div>
+            </div>
+            <div className="panel">
+              <div className="panel-info">
+                <h5>
+                  Custom functions.
+                  <span className="panel-sub-text">
+                    Add custom transformation steps in SQL.
+                  </span>{' '}
+                </h5>
+              </div>
+            </div>
+            <div className="panel">
+              <div className="panel-info">
+                <h5>
+                  Integrations.
+                  <span className="panel-sub-text">
+                    Connect database to your favorite BI tool or data app.
+                  </span>
+                </h5>
+              </div>
+            </div>
+            <div className="panel">
+              <div className="panel-info">
+                <h5>
+                  1 click exports.
+                  <span className="panel-sub-text">
+                    Move your data into a cloud data warehouse.
+                  </span>
+                </h5>
+              </div>
+            </div>
+            <div className="panel">
+              <div className="panel-info">
+                <h5>
+                  Database access.
+                  <span className="panel-sub-text">
+                    Get full access to database credentials.
+                  </span>
+                </h5>
+              </div>
+            </div>
+            <div className="panel">
+              <div className="panel-info">
+                <h5>
+                  File compatibility.
+                  <span className="panel-sub-text">
+                    Import from CSVs or excel files.
+                  </span>
+                </h5>
+              </div>
             </div>
           </div>
-          <div className="flex-row" css={flexRow}>
-            <div className="circle-img" css={circleImageStyles}>
-              <img src="./images/circle-image-3.svg" width="48" alt="" />
-            </div>
-            <div
-              className="solution-description"
-              css={solutionsDescriptionStyles}
-            >
-              <h3>Turnkey Data Warehousing & Integration</h3>
-              <h3 className="grey-text">
-                Get a modern, scalable data stack that grows with you. Dropbase
-                gives you access to your own database and allows you to quickly
-                integrate with your favorite tools.
-              </h3>
-              <a href="/">
-                Learn how <img src="./images/side-arrow.svg" alt="" />
-              </a>
-            </div>
-          </div>
-        </article>
-      </section>
-      <section className="features" css={featuresStyles}>
-        <div className="features-title">
-          <h2>Platform Features</h2>
-          <h3 className="text-grey">
-            Feature highlights on the Dropbase Platform
+        </section>
+        <section className="cta-section" css={ctaSectionStyles}>
+          <h2>Start Dropbase Trial</h2>
+          <h3>
+            Automatically collect, clean, and centralize your data with Dropbase
+            today
           </h3>
-        </div>
-        <div className="features-grid">
-          <div className="panel">
-            <div className="panel-info">
-              <h5>
-                Data request.
-                <span className="panel-sub-text">
-                  Request data from internal and external partners.
-                </span>
-              </h5>
-            </div>
+          <div className="ctaButtons" css={buttonStyles}>
+            <a href="/" css={tryForFreeBtn}>
+              Try Dropbase for Free
+            </a>
+            <a href="/" css={bookDemoStyles}>
+              Request Demo
+            </a>
           </div>
-          <div className="panel">
-            <div className="panel-info">
-              <h5>
-                Team Workspaces.
-                <span className="panel-sub-text">
-                  Collaborate on data with your team.
-                </span>
-              </h5>
-            </div>
+        </section>
+        <section className="blog" css={blogSectionStyles}>
+          <div className="blog-title">
+            <h2>Blog</h2>
+            <h3>
+              Read use cases, get product updates, and learn how to streamline
+              data management for your business.
+            </h3>
           </div>
-          <div className="panel">
-            <div className="panel-info">
-              <h5>
-                Spreadsheet UI.
-                <span className="panel-sub-text">
-                  See how your data looks as you process it.
-                </span>
-              </h5>
-            </div>
+          <div className="featured-post">
+            <a href="/" className="product-circle">
+              Product
+            </a>
+            <a href="/" className="card-heading">
+              Product Feature 04: Dropmail - Email CSV and Excel files directly
+              to your database
+            </a>
+            <p className="blog-panel-footer">March 21, 2022</p>
           </div>
-          <div className="panel">
-            <div className="panel-info">
-              <h5>
-                No-code functions.
-                <span className="panel-sub-text">
-                  Drag-and-drop pre-built cleaning steps.
-                </span>
-              </h5>
+        </section>
+      </main>
+      <footer css={footerStyles}>
+        <div className="footer-container">
+          <div className="footer-flex">
+            <div className="contacts">
+              <a href="/">
+                <img src="./images/logo.svg" width="240" alt="" />
+                <p>Unleashing data for everyone</p>
+              </a>
+              <p>Backed by</p>
+              <img src="./images/ycombinator-logo.png" width="150" alt="" />
             </div>
-          </div>
-          <div className="panel">
-            <div className="panel-info">
-              <h5>
-                Custom functions.
-                <span className="panel-sub-text">
-                  Add custom transformation steps in SQL.
-                </span>{' '}
-              </h5>
+            <div className="product">
+              <h3>Product</h3>
+              <a href="/">How it Works</a>
+              <a href="/">Pricing</a>
+              <a href="/">Request Demo</a>
             </div>
-          </div>
-          <div className="panel">
-            <div className="panel-info">
-              <h5>
-                Integrations.
-                <span className="panel-sub-text">
-                  Connect database to your favorite BI tool or data app.
-                </span>
-              </h5>
+            <div className="resources">
+              <h3>Resources</h3>
+              <a href="/">Support</a>
+              <a href="/">Docs</a>
+              <a href="/">Blog</a>
             </div>
-          </div>
-          <div className="panel">
-            <div className="panel-info">
-              <h5>
-                1 click exports.
-                <span className="panel-sub-text">
-                  Move your data into a cloud data warehouse.
-                </span>
-              </h5>
-            </div>
-          </div>
-          <div className="panel">
-            <div className="panel-info">
-              <h5>
-                Database access.
-                <span className="panel-sub-text">
-                  Get full access to database credentials.
-                </span>
-              </h5>
-            </div>
-          </div>
-          <div className="panel">
-            <div className="panel-info">
-              <h5>
-                File compatibility.
-                <span className="panel-sub-text">
-                  Import from CSVs or excel files.
-                </span>
-              </h5>
+            <div className="company">
+              <h3>Company</h3>
+              <a href="/">Contacts</a>
+              <a href="/">Careers</a>
+              <a href="/">Terms</a>
+              <a href="/">Privacy</a>
             </div>
           </div>
         </div>
-      </section>
-      <section className="cta-section" css={ctaSectionStyles}>
-        <h2>Start Dropbase Trial</h2>
-        <h3>
-          Automatically collect, clean, and centralize your data with Dropbase
-          today
-        </h3>
-        <div className="ctaButtons" css={buttonStyles}>
-          <a href="/" css={tryForFreeBtn}>
-            Try Dropbase for Free
-          </a>
-          <a href="/" css={bookDemoStyles}>
-            Request Demo
-          </a>
+        <div className="footer-bottom-row">
+          <div className="fine-print">
+            <p>© Copyright 2022 - Dropbase •&nbsp;All rights reserved.</p>
+          </div>
+          <div className="city">
+            <p>San Francisco | Toronto</p>
+          </div>
+          <div className="socials">
+            <a href="/">
+              <img src="./images/twitter-logo.svg" alt="" />
+            </a>
+            <a href="/">
+              <img src="./images/linkedin-logo.svg" alt="" />
+            </a>
+            <a href="/">
+              <img src="./images/producthunt-logo.svg" alt="" />
+            </a>
+            <a href="/">
+              <img src="./images/slack-logo.svg" alt="" />
+            </a>
+          </div>
         </div>
-      </section>
-    </main>
+      </footer>
+    </>
   );
 }
